@@ -1,8 +1,8 @@
 body {
-  padding-top: 75px;
+  padding-bottom: 20px;
   font-size: 16px;
-  color: #fff;
-  background-color: #61122f;
+  color: black;
+  background-color: #cccccc;
   font-family: 'Oxygen', sans-serif;
 }
 
@@ -10,23 +10,19 @@ body {
   box-sizing: border-box;
 }
 
-h2 {
-  text-align: center;
-}
-
 #header-nav {
-  background-color: #cccccc;
+  background-color: #6b6767;
   border-radius: 0;
-  border: 0;
+  border: 1px solid black;
 }
 
 .navbar-brand {
-  padding-top: 25px;
+  padding-top: 20px;
 }
 
 .navbar-brand h1 {
   font-family: 'Lora', serif;
-  color: blue;
+  color: black;
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
@@ -41,26 +37,93 @@ h2 {
 }
 
 #nav-list {
-  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 #nav-list a {
-  color: #951C49;
+  color: #000000;
   text-align: center;
 }
 
 #nav-list a:hover {
   background: #E7E7E7;
+  border: 1px #000000;
 }
 
-#nav-list a span {
-  font-size: 1.8em;
+#nav-list a { 
+  border: 1px #000000;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
+  border: 1px solid #000000;
+  background: gray;
 }
+
 .navbar-header button.navbar-toggle {
   clear: both;
-  margin-top: -30px;
+  margin-top: -25px;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
+
+.row {
+  width: 100%;
+}
+
+.container section span{
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.container .col-xs-12{
+  border: 1px solid;
+  background-color:  #a7a7a7;
+  padding: 20px 15px 20px 15px;
+  font-family: Helvetica;
+}
+
+ul {
+   border: 2px solid black;
+}
+
+li {
+    text-align : center;
+    border-bottom : 2px solid black;
+    background: #E7E7E7;
+}
+
+li:last-child {
+    border-bottom : none;
+}
+
+@media (min-width: 1200px) {
+}
+
+/*@media (max-width: 767px) {
+  .navbar-brand {
+    padding-top: 10px;
+    height: 40px;
+  }
+  .navbar-brand h1 {
+    padding-top: 10px;
+    font-size: 5vw;
+  }
+}*/
+
+@media (max-width: 479px) {
+  .navbar-brand h1 {
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
 }
